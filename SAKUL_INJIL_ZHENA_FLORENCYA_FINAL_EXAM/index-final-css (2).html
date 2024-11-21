@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style2.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <title>Final Web Design - CSS Grid Page Dashboard</title>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="menu-icon">☰</div>
+
+      <header class="header">
+        <div class="header__search">Search...</div>
+        <div class="header__avatar">Profile</div>
+      </header>
+
+      <aside class="sidenav">
+        <div class="sidenav__close-icon">
+          <i class="fas fa-times"></i>
+        </div>
+        <ul class="sidenav__list">
+          <li class="sidenav__list-item">Dashboard</li>
+          <li class="sidenav__list-item">Main Menu</li>
+          <li class="sidenav__list-item">News</li>
+          <li class="sidenav__list-item">Language</li>
+          <li class="sidenav__list-item">About</li>
+        </ul>
+      </aside>
+
+      <main class="main">
+        <div class="main-header">
+          <div class="main-header__heading">Hello Welcome</div>
+          <div class="main-header__updates">Items</div>
+        </div>
+        <div class="main-overview">
+          <div class="overviewcard">
+            <i class="fas fa-tasks overviewcard__icon"></i>
+            <div class="overviewcard__info">
+              <h4 class="overviewcard__title">Tasks Completed</h4>
+              <p>75% of your tasks have been completed.</p>
+            </div>
+          </div>
+          <div class="overviewcard">
+            <i class="fas fa-users overviewcard__icon"></i>
+            <div class="overviewcard__info">
+              <h4 class="overviewcard__title">New Users</h4>
+              <p>5 new users have joined today.</p>
+            </div>
+          </div>
+          <div class="overviewcard">
+            <i class="fas fa-chart-line overviewcard__icon"></i>
+            <div class="overviewcard__info">
+              <h4 class="overviewcard__title">Growth</h4>
+              <p>+20% growth in the last month.</p>
+            </div>
+          </div>
+          <div class="overviewcard">
+            <i class="fas fa-cogs overviewcard__icon"></i>
+            <div class="overviewcard__info">
+              <h4 class="overviewcard__title">Settings</h4>
+              <p>All system settings are up to date.</p>
+            </div>
+          </div>
+        </div>
+        <div class="main-cards">
+          <div class="card">
+            <h3 class="card__title">Task Completed</h3>
+            <p class="card__description"></p>
+            <div class="card__stats">
+              <span>75%</span>
+              <progress value="50" max="100"></progress>
+            </div>
+          </div>
+          <div class="card">
+            <h3 class="card__title">New Users</h3>
+            <p class="card__description">
+            </p>
+            <div class="card__stats">
+              <span>5%</span>
+              <progress value="5" max="100"></progress>
+            </div>
+          </div>
+          <div class="card">
+            <h3 class="card__title">Growth</h3>
+            <p class="card__description">
+            </p>
+            <div class="card__stats">
+              <span>20%</span>
+              <progress value="20" max="100"></progress>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__copyright">&copy; 2024 UK</div>
+        <div class="footer__signature">Made with love by pure genius </div>
+      </footer>
+    </div>
+  </body>
+</html>

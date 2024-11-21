@@ -1,0 +1,222 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(
+    135deg,
+    #2d2f3d,
+    #1a1c2c
+  ); /* Gradasi gelap dari Dark Slate Gray ke hitam */
+  color: #f0f4f8; /* Light Gray untuk teks */
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Grid Layout */
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "menu header"
+    "sidenav main"
+    "sidenav footer";
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 250px 1fr;
+  height: 100vh;
+}
+
+/* Menu Icon */
+.menu-icon {
+  grid-area: menu;
+  padding: 10px;
+  background: linear-gradient(
+    135deg,
+    #2d2f3d,
+    #00bfae
+  ); /* Gradasi Turquoise ke Golden Yellow untuk menu */
+  color: #fff;
+  font-size: 43px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Header */
+.header {
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(
+    135deg,
+    #00bfae
+  ); /* Gradasi Turquoise ke Golden Yellow untuk header */
+}
+
+.header__search {
+  flex: 1;
+  background: #f0f4f8; /* Light Gray untuk search bar */
+  padding: 15px 20px;
+  border-radius: 25px;
+  color: #2d2f3d; /* Dark Slate Gray untuk teks */
+  font-size: 16px;
+  border: none;
+}
+
+.header__avatar {
+  padding: 15px;
+  background: #00bfae; /* Turquoise untuk avatar */
+  border-radius: 50%; /* Set border-radius to 50% for a perfect circle */
+  font-size: 13px;
+  text-align: center;
+  cursor: pointer;
+  width: 50px; /* Set a specific width */
+  height: 50px; /* Set a specific height, same as width for a circle */
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+}
+
+/* Sidebar */
+.sidenav {
+  grid-area: sidenav;
+  background: #2d2f3d; /* Dark Slate Gray untuk sidebar */
+  color: white;
+  padding: 20px 10px;
+}
+
+.sidenav__list {
+  list-style: none;
+  padding: 20px;
+}
+
+.sidenav__list-item {
+  margin: 15px 0;
+  font-size: 16px;
+  background: linear-gradient(
+    135deg,
+    #2d2f3d,
+    #00bfae
+  ); /* Gradasi Dark Slate Gray ke Turquoise untuk item sidebar */
+  color: #b8d1db;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.sidenav__list-item:hover {
+  background: linear-gradient(
+    135deg,
+    #f5a623,
+    #ff5c8d
+  ); /* Gradasi Golden Yellow ke Vivid Pink untuk hover */
+  transform: translateX(10px);
+}
+
+/* Main Content */
+.main {
+  grid-area: main;
+  display: grid;
+  grid-template-rows: 80px 120px auto;
+  grid-gap: 10px;
+  padding: 10px;
+  background: #2d2f3d;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d0e1e9;
+  padding: 10px 20px;
+  border-radius: 2px;
+}
+
+.main-header__heading {
+  font-size: 15px;
+  color: #00bfae; /* Turquoise untuk heading */
+}
+
+.main-header__updates {
+  font-size: 14px;
+  color: #999;
+}
+
+.main-overview {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.overviewcard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(
+    135deg,
+    #2d2f3d,
+    #00bfae
+  ); /* Gradasi Dark Slate Gray ke Turquoise untuk card */
+  color: white;
+  padding: 10px 15px;
+  text-align: left;
+  border-radius: 2px;
+  font-size: 14px;
+  height: 50px;
+  transition: transform 0.2s;
+}
+
+.overviewcard:hover {
+  transform: scale(1.05);
+  background: linear-gradient(
+    135deg,
+    #f5a623,
+    #00bfae
+  ); /* Gradasi Golden Yellow ke Turquoise untuk hover */
+}
+
+.main-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 15px;
+}
+
+.card {
+  padding: 20px;
+  background: linear-gradient(
+    135deg,
+    #2d2f3d,
+    #00bfae
+  ); /* Gradasi Dark Slate Gray ke Turquoise untuk card */
+  color: white;
+  text-align: center;
+  border-radius: 2px;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background: linear-gradient(
+    135deg,
+    #f5a623,
+    #00bfae
+  ); /* Gradasi Golden Yellow ke Turquoise untuk hover */
+}
+
+/* Footer */
+.footer {
+  grid-area: footer;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2d2f3d; /* Dark Slate Gray untuk footer */
+  color: white;
+  font-size: 14px;
+}
